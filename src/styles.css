@@ -1,0 +1,129 @@
+/* Style for the entire app container */
+.todo-app {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Input field and add button container */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: darkgrey;
+    transform: translateY(-2px);
+}
+
+/* Task list styles */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for each todo item */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #f9f9f9;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.edit-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: white;
+}
+
+.save-button i {
+    color: #28a745;
+}
+
+.save-button i:hover {
+    color: #218838;
+}
+
+.edit-button i {
+    color: #ffc107;
+}
+
+.edit-button i:hover {
+    color: #e0a800;
+}
+
+.delete-button i {
+    color: #dc3545;
+}
+
+.delete-button i:hover {
+    color: #c82333;
+}
+.warning {
+    color: #ffc107 ;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
